@@ -4,3 +4,4 @@
 4. Values inside tree is lower than Int.Max
 5. Memory consumption is limited
 6. File permissions is provided to the program
+7. Collection is not empty
