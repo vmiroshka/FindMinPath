@@ -1,6 +1,6 @@
 package vmiroshka
 
-import cats.effect.{Async, IO, Sync}
+import cats.effect.Async
 import fs2._
 import fs2.io.file.{Files, Path}
 
