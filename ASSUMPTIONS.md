@@ -1,0 +1,1 @@
+1. Guarantee that all nodes would have 2 children
