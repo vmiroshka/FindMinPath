@@ -2,11 +2,10 @@ package vmiroshka
 
 import cats.effect._
 import cats.Show.catsShowForString
-import fs2._
 import fs2.io.file._
 import vmiroshka.MinimalPathFinder.DijkstraPathFinder
 import vmiroshka.Parser.SpaceSplitParser
-import vmiroshka.Reader.{ConsoleReader, FileReader}
+import vmiroshka.Reader.FileReader
 
 
 object Main extends IOApp.Simple {
