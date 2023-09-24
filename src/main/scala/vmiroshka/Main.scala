@@ -2,16 +2,15 @@ package vmiroshka
 
 import cats.effect._
 import cats.Show.catsShowForString
-import fs2.io.file._
 import vmiroshka.MinimalPathFinder.DijkstraPathFinder
 import vmiroshka.Parser.SpaceSplitParser
-import vmiroshka.Reader.FileReader
+import vmiroshka.Reader.ConsoleReader
 
 
 object Main extends IOApp.Simple {
 
   override def run: IO[Unit] = {
-    new FileReader[IO](Path.fromNioPath(java.nio.file.Paths.get("")))
+    new ConsoleReader[IO]()
       .readLines
       .filter(_.nonEmpty)
       .through(new SpaceSplitParser[IO].parseDataLinesPipe())
